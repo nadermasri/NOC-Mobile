@@ -84,7 +84,11 @@ app.include_router(alert_router)
 
 @app.on_event("startup")
 def on_startup():
-    init_db()
+    try:
+        init_db()
+    except Exception as e:
+        import logging
+        logging.warning(f"DB init warning: {e}")
     start_scheduler()
 
 
