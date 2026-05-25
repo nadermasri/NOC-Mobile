@@ -13,3 +13,6 @@
 -keepattributes Signature
 -keepattributes *Annotation*
 -dontwarn sun.misc.**
+
+# Play Core (referenced by Flutter engine but not always present)
+-dontwarn com.google.android.play.core.**
