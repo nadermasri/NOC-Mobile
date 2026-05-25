@@ -1,0 +1,10 @@
+# Nixpacks config — used by Railway if it can't find the Dockerfile.
+# Prefer the Dockerfile (railway.json points to it), this is a fallback only.
+[phases.setup]
+nixPkgs = ["python312"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[start]
+cmd = "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 2"
