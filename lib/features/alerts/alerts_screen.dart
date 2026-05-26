@@ -22,8 +22,11 @@ class _AlertsScreenState extends ConsumerState<AlertsScreen> {
   }
 
   Future<void> _loadAlerts() async {
+    if (!mounted) return;
     await ref.read(alertsProvider.notifier).load(status: _statusFilter);
+    if (!mounted) return;
     final count = await ref.read(alertServiceProvider).getUnreadCount();
+    if (!mounted) return;
     ref.read(unreadAlertCountProvider.notifier).state = count;
   }
 
