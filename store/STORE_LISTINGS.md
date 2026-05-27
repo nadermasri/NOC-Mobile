@@ -71,9 +71,9 @@ Make sure these terms appear naturally in the long description: network, ping, D
 - Mature content: None
 
 ### Contact
-- **Website**: https://github.com/nadermasri/pocket-noc
+- **Website**: https://github.com/nadermasri/noc-mobile
 - **Email**: naderbilalmasri@gmail.com
-- **Privacy Policy**: https://nadermasri.github.io/pocket-noc/privacy.html *(set this up — see DEPLOYMENT_NOTES.md)*
+- **Privacy Policy**: https://nadermasri.github.io/noc-mobile/privacy.html *(set this up — see DEPLOYMENT_NOTES.md)*
 
 ---
 
@@ -153,13 +153,13 @@ Initial release.
 4+
 
 ### Support URL
-https://github.com/nadermasri/pocket-noc/issues
+https://github.com/nadermasri/noc-mobile/issues
 
 ### Privacy Policy URL
-https://nadermasri.github.io/pocket-noc/privacy.html *(set this up — see DEPLOYMENT_NOTES.md)*
+https://nadermasri.github.io/noc-mobile/privacy.html *(set this up — see DEPLOYMENT_NOTES.md)*
 
 ### Marketing URL (optional)
-https://github.com/nadermasri/pocket-noc
+https://github.com/nadermasri/noc-mobile
 
 ---
 
@@ -178,7 +178,7 @@ https://github.com/nadermasri/pocket-noc
 - The app follows Google Play Families Policy
 
 ### Independent security review
-Code is open source and available for review at: https://github.com/nadermasri/pocket-noc
+Code is open source and available for review at: https://github.com/nadermasri/noc-mobile
 
 ---
 

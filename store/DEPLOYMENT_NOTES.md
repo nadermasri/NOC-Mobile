@@ -22,7 +22,7 @@ git push
 
 Then on GitHub: **Settings → Pages → Source → Deploy from branch → `main` → `/docs`**.
 
-Your privacy policy will be live at: `https://nadermasri.github.io/pocket-noc/`
+Your privacy policy will be live at: `https://nadermasri.github.io/noc-mobile/`
 
 ---
 
