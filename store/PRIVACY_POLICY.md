@@ -1,9 +1,9 @@
-# Privacy Policy for Pocket NOC
+# Privacy Policy for NOC Mobile
 
 **Last updated:** May 26, 2026
 **Effective date:** May 26, 2026
 
-Pocket NOC ("we", "our", or "the app") is a network diagnostics and infrastructure monitoring application. This Privacy Policy describes how we collect, use, and protect your information when you use Pocket NOC.
+NOC Mobile ("we", "our", or "the app") is a network diagnostics and infrastructure monitoring application. This Privacy Policy describes how we collect, use, and protect your information when you use NOC Mobile.
 
 ## 1. Information We Collect
 
@@ -16,7 +16,7 @@ When you create an account (optional), we collect:
 
 ### 1.2 Information You Generate by Using the App
 
-When you use Pocket NOC's diagnostic and monitoring features, the app stores:
+When you use NOC Mobile's diagnostic and monitoring features, the app stores:
 - **Targets you save** (hostnames, IP addresses, ports)
 - **Diagnostic results** (ping latency, DNS records, port status, TLS certificate info, HTTP responses, traceroute hops)
 - **Monitor configurations** (what you're monitoring and how often)
@@ -53,9 +53,9 @@ We do **not** sell, rent, or share your data with third parties for marketing, a
 
 ## 4. Network Diagnostic Targets
 
-Pocket NOC performs network operations (ping, DNS lookup, port checks, etc.) against hostnames and IP addresses **that you specify**. These operations are sent directly from your device to the target you entered. We do not monitor, log, or restrict which targets you check.
+NOC Mobile performs network operations (ping, DNS lookup, port checks, etc.) against hostnames and IP addresses **that you specify**. These operations are sent directly from your device to the target you entered. We do not monitor, log, or restrict which targets you check.
 
-You are responsible for ensuring you have permission to perform diagnostic checks against any third-party targets. Pocket NOC is intended for diagnosing networks and infrastructure you own or are authorized to test.
+You are responsible for ensuring you have permission to perform diagnostic checks against any third-party targets. NOC Mobile is intended for diagnosing networks and infrastructure you own or are authorized to test.
 
 ## 5. Data Retention and Deletion
 
@@ -67,7 +67,7 @@ When you delete your account, all your data is permanently removed from our serv
 
 ## 6. Third-Party Services
 
-Pocket NOC uses the following third-party services:
+NOC Mobile uses the following third-party services:
 - **Railway** (railway.com) — hosts our backend API and database (EU region)
 - **GitHub** (github.com) — hosts our open-source code
 
@@ -75,7 +75,7 @@ We do not embed any third-party analytics, advertising, tracking, or social-medi
 
 ## 7. Children's Privacy
 
-Pocket NOC is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe we have, please contact us and we will delete it.
+NOC Mobile is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe we have, please contact us and we will delete it.
 
 ## 8. Your Rights
 
@@ -90,11 +90,11 @@ To exercise any of these rights, contact us at the address below.
 
 ## 9. International Data Transfers
 
-If you use Pocket NOC from outside the European Union, please be aware that your data will be transferred to and stored on servers in the EU.
+If you use NOC Mobile from outside the European Union, please be aware that your data will be transferred to and stored on servers in the EU.
 
 ## 10. Changes to This Policy
 
-We may update this Privacy Policy from time to time. We'll notify you of significant changes via the app. Continued use of Pocket NOC after a change means you accept the updated policy.
+We may update this Privacy Policy from time to time. We'll notify you of significant changes via the app. Continued use of NOC Mobile after a change means you accept the updated policy.
 
 ## 11. Contact
 
@@ -102,7 +102,7 @@ If you have questions about this Privacy Policy or your data, contact us at:
 
 **Email:** naderbilalmasri@gmail.com
 **Developer:** Nader Al Masri
-**App:** Pocket NOC
+**App:** NOC Mobile
 
 ---
 

@@ -9,6 +9,7 @@ import 'package:pocket_noc/core/constants/app_constants.dart';
 import 'package:pocket_noc/core/providers/app_providers.dart';
 import 'package:pocket_noc/core/services/storage_service.dart';
 import 'package:pocket_noc/core/services/pdf_export_service.dart';
+import 'package:pocket_noc/core/services/auth_service.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -89,6 +90,22 @@ class SettingsScreen extends ConsumerWidget {
                       onTap: () => context.push('/upgrade'),
                     ),
                   ],
+                  const Divider(height: 1),
+                  ListTile(
+                    leading: const Icon(Icons.logout),
+                    title: const Text('Sign Out'),
+                    onTap: () => _confirmSignOut(context, ref),
+                  ),
+                  const Divider(height: 1),
+                  ListTile(
+                    leading: const Icon(Icons.delete_forever,
+                        color: AppColors.error),
+                    title: const Text('Delete Account',
+                        style: TextStyle(color: AppColors.error)),
+                    subtitle: const Text(
+                        'Permanently delete your account and all data'),
+                    onTap: () => _confirmDeleteAccount(context, ref),
+                  ),
                 ] else ...[
                   ListTile(
                     leading: const Icon(Icons.login),
@@ -191,7 +208,7 @@ class SettingsScreen extends ConsumerWidget {
               children: [
                 const ListTile(
                   leading: Icon(Icons.info_outline),
-                  title: Text('Pocket NOC'),
+                  title: Text('NOC Mobile'),
                   subtitle: Text(
                     'Network diagnostics and infrastructure toolkit',
                   ),
@@ -208,7 +225,7 @@ class SettingsScreen extends ConsumerWidget {
           const SizedBox(height: 32),
           Center(
             child: Text(
-              'Pocket NOC v${AppConstants.appVersion}',
+              'NOC Mobile v${AppConstants.appVersion}',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: isDark
                     ? AppColors.darkTextTertiary
@@ -308,6 +325,75 @@ class SettingsScreen extends ConsumerWidget {
               }
             },
             child: const Text('Clear All',
+                style: TextStyle(color: AppColors.error)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _confirmSignOut(BuildContext context, WidgetRef ref) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Sign Out'),
+        content: const Text('Are you sure you want to sign out?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () async {
+              await ref.read(authStateProvider.notifier).logout();
+              if (ctx.mounted) Navigator.pop(ctx);
+            },
+            child: const Text('Sign Out'),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _confirmDeleteAccount(BuildContext context, WidgetRef ref) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Delete Account'),
+        content: const Text(
+          'This will permanently delete your account and all associated data from our servers. '
+          'This cannot be undone.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () async {
+              Navigator.pop(ctx);
+              final messenger = ScaffoldMessenger.of(context);
+              final success = await AuthService().deleteAccount();
+              if (success) {
+                await ref.read(authStateProvider.notifier).logout();
+                if (context.mounted) {
+                  messenger.showSnackBar(
+                    const SnackBar(
+                      content: Text('Account deleted successfully'),
+                    ),
+                  );
+                }
+              } else {
+                messenger.showSnackBar(
+                  const SnackBar(
+                    content: Text(
+                        'Failed to delete account. Please try again or contact support.'),
+                    backgroundColor: AppColors.error,
+                  ),
+                );
+              }
+            },
+            child: const Text('Delete Account',
                 style: TextStyle(color: AppColors.error)),
           ),
         ],

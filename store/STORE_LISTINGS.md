@@ -1,4 +1,4 @@
-# Pocket NOC — Store Listings
+# NOC Mobile — Store Listings
 
 All copy is ready to paste into Google Play Console and App Store Connect.
 
@@ -8,7 +8,7 @@ All copy is ready to paste into Google Play Console and App Store Connect.
 
 ### App Name (max 30 chars)
 ```
-Pocket NOC — Network Toolkit
+NOC Mobile — Network Toolkit
 ```
 
 ### Short Description (max 80 chars)
@@ -18,9 +18,9 @@ Pro network diagnostics, monitors, and infrastructure alerts in your pocket.
 
 ### Long Description (max 4000 chars)
 ```
-Pocket NOC is a complete network operations toolkit for engineers, sysadmins, and DevOps professionals — right in your pocket.
+NOC Mobile is a complete network operations toolkit for engineers, sysadmins, and DevOps professionals — right in your pocket.
 
-Whether you're troubleshooting a misbehaving server, monitoring uptime for production infrastructure, or just need a reliable ping from your phone, Pocket NOC gives you the tools you'd find in a desktop network operations center, designed for mobile.
+Whether you're troubleshooting a misbehaving server, monitoring uptime for production infrastructure, or just need a reliable ping from your phone, NOC Mobile gives you the tools you'd find in a desktop network operations center, designed for mobile.
 
 ▸ DIAGNOSTIC TOOLS
 • Ping — ICMP echo with packet loss and latency stats
@@ -57,7 +57,7 @@ Free includes 3 monitors, 3 saved targets, 50 history items, and 5 AI explanatio
 • Your data stays on your device (sync is optional)
 • Open source under MIT license
 
-Built for IT professionals who need real network tools — not toys. Pocket NOC is what you reach for when your laptop is closed but production is on fire.
+Built for IT professionals who need real network tools — not toys. NOC Mobile is what you reach for when your laptop is closed but production is on fire.
 ```
 
 ### Tags / Keywords (Google uses your description, not separate keywords)
@@ -81,7 +81,7 @@ Make sure these terms appear naturally in the long description: network, ping, D
 
 ### App Name (max 30 chars)
 ```
-Pocket NOC
+NOC Mobile
 ```
 
 ### Subtitle (max 30 chars)
@@ -93,7 +93,7 @@ Network diagnostics toolkit
 ```
 The complete network operations center, in your pocket.
 
-Pocket NOC gives you the diagnostic, monitoring, and observability tools that network engineers and sysadmins reach for every day — designed natively for iPhone and iPad.
+NOC Mobile gives you the diagnostic, monitoring, and observability tools that network engineers and sysadmins reach for every day — designed natively for iPhone and iPad.
 
 DIAGNOSTIC TOOLS
 • Ping with packet loss and latency stats
@@ -109,7 +109,7 @@ INFRASTRUCTURE MONITORING
 Set up monitors for your services. Get alerts when something goes down or starts degrading. View 24-hour response time charts. Track uptime percentages. Sync across all your devices.
 
 AI EXPLANATIONS
-Don't just read the results — understand them. Pocket NOC explains what each diagnostic means in plain English, rates severity, and tells you what to check next.
+Don't just read the results — understand them. NOC Mobile explains what each diagnostic means in plain English, rates severity, and tells you what to check next.
 
 REPORTS & EXPORT
 Generate beautiful PDF reports of any diagnostic. Share with your team via Mail, Messages, or any app. Save frequently checked targets for one-tap recheck.

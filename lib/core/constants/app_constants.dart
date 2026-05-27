@@ -6,7 +6,7 @@ const String _envBaseUrl = String.fromEnvironment(
 class AppConstants {
   AppConstants._();
 
-  static const String appName = 'Pocket NOC';
+  static const String appName = 'NOC Mobile';
   static const String appVersion = '1.0.0';
   static const String appDescription =
       'Network diagnostics and infrastructure toolkit';

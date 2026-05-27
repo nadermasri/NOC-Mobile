@@ -13,8 +13,8 @@ from app.database import init_db
 from app.services.scheduler import start_scheduler, stop_scheduler
 
 app = FastAPI(
-    title="Pocket NOC API",
-    description="Backend API for the Pocket NOC mobile app",
+    title="NOC Mobile API",
+    description="Backend API for the NOC Mobile mobile app",
     version="1.0.0",
     docs_url="/api/docs" if os.getenv("DEBUG", "false").lower() == "true" else None,
     redoc_url=None,

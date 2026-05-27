@@ -51,7 +51,7 @@ class PdfExportService {
     if (file != null) {
       await Share.shareXFiles(
         [XFile(file.path)],
-        subject: 'Pocket NOC Report - $title',
+        subject: 'NOC Mobile Report - $title',
       );
     }
   }
@@ -70,7 +70,7 @@ class PdfExportService {
           pw.Column(
             crossAxisAlignment: pw.CrossAxisAlignment.start,
             children: [
-              pw.Text('Pocket NOC',
+              pw.Text('NOC Mobile',
                   style: pw.TextStyle(
                       fontSize: 18, fontWeight: pw.FontWeight.bold)),
               pw.SizedBox(height: 2),
